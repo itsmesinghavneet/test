@@ -9,7 +9,7 @@ import sys
 from subprocess import check_output
 content = check_output(["git", "log", "-p", "-1"])  #This will store the output of the command to 'content'
 
-os.chdir("home/travis/build/itsmesinghavneet/test/docs") # location where the txt file needs to be saved
+os.chdir("/docs") # location where the txt file needs to be saved
 f=open("image-version.md",'w')
 f.write(content)
 f.close()
