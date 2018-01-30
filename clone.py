@@ -5,8 +5,7 @@ import sys
 
 # New Import
 #Here, define the repo from where you want to take the last commit.
-path        =   "home/travis/build/itsmesinghavneet/test/" 
-os.chdir(path) 
+##os.chdir(path) 
 from subprocess import check_output
 content = check_output(["git", "log", "-p", "-1"])  #This will store the output of the command to 'content'
 
