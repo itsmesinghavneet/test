@@ -10,6 +10,7 @@ services:
 before_script:
   - npm install
 script:
+  - echo $PWD
   - python clone.py
   - cd website
   - npm install docusaurus
